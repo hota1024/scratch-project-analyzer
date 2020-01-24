@@ -4,12 +4,8 @@ module.exports = {
     browser: true,
     node: true
   },
-  parserOptions: {
-    parser: '@typescript-eslint/parser'
-  },
   extends: [
     '@nuxtjs/eslint-config-typescript',
-    '@nuxtjs',
     'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
