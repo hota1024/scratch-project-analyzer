@@ -24,7 +24,8 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "chart.js": "^2.9.3",
     "nuxt": "^2.0.0",
-    "project-json": "^0.0.5"
+    "project-json": "^0.0.5",
+    "vue-chartjs": "^3.5.0"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.5.6",
