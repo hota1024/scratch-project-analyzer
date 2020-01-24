@@ -33,9 +33,9 @@ const config: Configuration = {
    */
   plugins: [],
   /*
-   ** Nuxt.js dev-modules
+   ** Nuxt.js build-modules
    */
-  devModules: [
+  buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify'
