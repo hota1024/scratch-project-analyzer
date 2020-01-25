@@ -46,6 +46,7 @@
     "lint-staged": "^8.2.1",
     "prettier": "^1.16.4",
     "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "vuex-class": "^0.3.2"
   }
 }
