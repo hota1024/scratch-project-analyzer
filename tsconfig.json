@@ -27,6 +27,7 @@
     "types": [
       "@types/node",
       "@nuxt/types",
+      "@nuxtjs/axios",
       "vuetify",
       "@types/chart.js"
     ]
