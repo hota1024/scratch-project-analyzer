@@ -7358,10 +7358,10 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-project-json@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/project-json/-/project-json-0.0.8.tgz#07667a089427350034dc41f432a266fb9d565a1a"
-  integrity sha512-oZ2BfflxiFHMXvvwgFbDuE9uH5SJ1lJThKxwgp98t+7E6EYdaekYsP24iW1IcJT9aojmqxjGUAnMt9LHn9hOzw==
+project-json@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/project-json/-/project-json-0.0.9.tgz#394870524fe42d8f057efc79f73c18b49e01176b"
+  integrity sha512-b9cBO0ewvjhOH8fqW+HOqfO9sYeuSu5jUA5PMeGmlO9hR9wdWV8RIZbrCC3LoLtVXAe69HtyE8I2QyPvfcbPhA==
   dependencies:
     axios "^0.19.1"
     babel-polyfill "^6.26.0"
