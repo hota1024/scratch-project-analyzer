@@ -1,12 +1,12 @@
 {
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    },
-    {
       "src": "/_nuxt/(.*)",
       "dest": "/_nuxt/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
