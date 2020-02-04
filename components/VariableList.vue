@@ -10,7 +10,6 @@
       :headers="headers"
       :items="variables"
       :search="search"
-      :items-per-page="500"
     ></v-data-table>
   </v-card>
 </template>
