@@ -8,10 +8,19 @@
           <v-divider></v-divider>
           <v-card-text>
             <p>
-              ID: <v-chip>{{ apiProject.id }}</v-chip>
+              ID <v-chip>{{ apiProject.id }}</v-chip>
             </p>
             <p>
-              Project name: <v-chip>{{ apiProject.title }}</v-chip>
+              Project name <v-chip>{{ apiProject.title }}</v-chip>
+            </p>
+            <p>
+              Project Link:
+              <a
+                :href="`https://scratch.mit.edu/projects/${projectId}`"
+                target="_blank"
+              >
+                {{ `https://scratch.mit.edu/projects/${projectId}` }}</a
+              >
             </p>
           </v-card-text>
         </v-card>
@@ -58,16 +67,49 @@
           <v-divider></v-divider>
           <v-card-text>
             <p>
-              Targets(sprites + stage):
+              Targets(sprites + stage)
               <v-chip>{{ project.targets.length }}</v-chip>
             </p>
             <p>
-              Total assets: <v-chip>{{ totalAssets }}</v-chip>
+              Total assets <v-chip>{{ totalAssets }}</v-chip>
             </p>
             <p>
-              Monitors: <v-chip>{{ project.monitors.length }}</v-chip>
+              Monitors <v-chip>{{ project.monitors.length }}</v-chip>
+            </p>
+            <p>
+              Views
+              <v-chip>
+                <v-icon left>mdi-eye</v-icon>
+                {{ apiProject.stats.views }}</v-chip
+              >
+            </p>
+            <p>
+              Loves
+              <v-chip color="#F26580">
+                <v-icon left>mdi-heart</v-icon>
+                {{ apiProject.stats.loves }}</v-chip
+              >
+            </p>
+            <p>
+              Favorites
+              <v-chip color="#F7BE03">
+                <v-icon left>mdi-star</v-icon>
+                {{ apiProject.stats.favorites }}</v-chip
+              >
+            </p>
+            <p>
+              Comments
+              <v-chip>
+                <v-icon left>mdi-comment-text-multiple</v-icon>
+                {{ apiProject.stats.comments }}</v-chip
+              >
             </p>
           </v-card-text>
+        </v-card>
+        <v-card class="mb-4">
+          <v-card-title>Thumbnail</v-card-title>
+          <v-divider></v-divider>
+          <v-img :src="apiProject.image"></v-img>
         </v-card>
         <v-card class="mb-4">
           <list-list
