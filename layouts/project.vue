@@ -37,7 +37,7 @@
           </template>
           <v-list-item
             v-for="sprite in project.sprites()"
-            :key="sprite.id"
+            :key="sprite['id']"
             :to="getSpriteUrl(sprite)"
           >
             <v-list-item-avatar>
