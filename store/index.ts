@@ -1,5 +1,6 @@
 import { MutationTree, ActionTree, GetterTree } from 'vuex'
 import ProjectJsonParser, { Project, ProjectJson } from 'project-json'
+import { APIProject } from '~/types/project'
 
 export enum Tab {
   Project,
@@ -10,7 +11,8 @@ export const state = () => ({
   project: {} as Project,
   loadingProject: false as boolean,
   projectError: false as boolean,
-  projectId: '' as string
+  projectId: '' as string,
+  apiProject: {} as APIProject
 })
 
 export type RootState = ReturnType<typeof state>
@@ -34,6 +36,9 @@ export const mutations: MutationTree<RootState> = {
   },
   SET_PROJECT_ID(state, id: string) {
     state.projectId = id
+  },
+  SET_API_PROJECT(state, project: APIProject) {
+    state.apiProject = project
   }
 }
 
@@ -47,6 +52,17 @@ export const actions: ActionTree<RootState, RootState> = {
       )
       const parser = new ProjectJsonParser()
       const project = parser.parse(data)
+
+      const apiProject = await this.$axios.$get(
+        'https://sp-analyzer-api.now.sh/',
+        {
+          params: {
+            id
+          }
+        }
+      )
+      commit('SET_API_PROJECT', apiProject)
+
       commit('SET_PROJECT_ID', id)
       commit('SET_PROJECT', project)
     } catch {
