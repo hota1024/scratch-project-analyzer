@@ -6,5 +6,11 @@
       "use": "@nuxtjs/now-builder",
       "config": {}
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
   ]
 }
