@@ -23,7 +23,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/now-builder": "^0.17.0",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "nuxt": "^2.0.0",
     "nuxt-property-decorator": "^2.5.0",
     "project-json": "^0.0.9",
